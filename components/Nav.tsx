@@ -10,11 +10,25 @@ export default function Nav() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     const isMobile = window.innerWidth <= 768;
+  //     setIsMobile(isMobile);
+  //   };
+
+  //   window.addEventListener("resize", handleResize);
+
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, []);
+
   useEffect(() => {
     const handleResize = () => {
-      const isMobile = window.innerWidth <= 768;
-      setIsMobile(isMobile);
+      setIsMobile(window.innerWidth <= 768);
     };
+
+    handleResize(); // Set the initial value on component mount.
 
     window.addEventListener("resize", handleResize);
 
