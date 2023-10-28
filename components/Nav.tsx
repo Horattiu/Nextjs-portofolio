@@ -26,14 +26,13 @@ export default function Nav() {
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
-    };
+      handleResize(); // Set the initial value on component mount.
 
-    handleResize(); // Set the initial value on component mount.
+      window.addEventListener("resize", handleResize);
 
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
     };
   }, []);
 
