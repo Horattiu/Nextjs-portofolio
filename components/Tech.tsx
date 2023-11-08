@@ -35,28 +35,27 @@ function Tech() {
           <CardHeader>
             <CardTitle>React</CardTitle>
             <CardDescription>
-              Built my knowledge on the language from ground up following ES6+
-              concepts. Studied both in OOP and Functional paradigms.
+              React's component-based architecture promotes reusability and
+              modularity, allowing me to build complex user interfaces
+              efficiently.
             </CardDescription>
           </CardHeader>
         </Card>
         <Card className="">
           <CardHeader>
-            <CardTitle>Typescript</CardTitle>
+            <CardTitle>TypeScript</CardTitle>
             <CardDescription>
-              Imagine JavaScript as a toolbox with incredible flexibility, but
-              sometimes, it's like building without a blueprint. TypeScript is
-              like having that blueprint. It adds type checking, helping us
-              avoid mistakes, catch errors early
+              TypeScript's static typing system helps catch errors during
+              development, making my code more robust and reliable.
             </CardDescription>
           </CardHeader>
         </Card>
         <Card className="">
           <CardHeader>
-            <CardTitle>nodeJS</CardTitle>
+            <CardTitle>NodeJS</CardTitle>
             <CardDescription>
-              Built my knowledge on the language from ground up following ES6+
-              concepts. Studied both in OOP and Functional paradigms.
+              Node.js allows me to use JavaScript on the server-side, creating a
+              full-stack development environment using a single language.
             </CardDescription>
           </CardHeader>
         </Card>
@@ -64,16 +63,17 @@ function Tech() {
           <CardHeader>
             <CardTitle>MongoDB</CardTitle>
             <CardDescription>
-              Built my knowledge on the language from ground up following ES6+
-              concepts. Studied both in OOP and Functional paradigms.
+              MongoDB is schemaless, which means I can change the structure of
+              data on the fly without impacting existing data.
             </CardDescription>
           </CardHeader>
         </Card>
         <Card className="">
           <CardHeader>
-            <CardTitle>tailwindcss</CardTitle>
+            <CardTitle>Tailwind CSS</CardTitle>
             <CardDescription>
-              Tailwind CSS is incredibly cool and one of my favorites.
+              Tailwind allows me to quickly prototype and build user interfaces
+              without the need to write custom CSS from scratch.
             </CardDescription>
           </CardHeader>
         </Card>

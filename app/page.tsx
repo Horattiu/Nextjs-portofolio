@@ -9,6 +9,7 @@ import "./csss.css";
 import Landing from "@/components/Landing";
 import { Contact } from "@/components/Contact";
 import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 
 const DynamicNav = dynamic(() => import("../components/Nav"), {
   ssr: false,
