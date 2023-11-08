@@ -91,7 +91,7 @@ export default function Nav() {
             <li className="pl-10 md:pl-40 sm:pl-20">
               <a href="" className="">
                 <Image
-                  src="/./img/logonext.png"
+                  src="/./logonext.png"
                   alt=""
                   className="dark:invert w-24"
                   width={100}
