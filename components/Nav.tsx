@@ -90,13 +90,12 @@ export default function Nav() {
           <ul className="flex items-center justify-between w-full">
             <li className="pl-10 md:pl-40 sm:pl-20">
               <a href="" className="">
-                <Image
-                  src="/./logonext.png"
+                <img
+                  src="/./img/logonext.png"
                   alt=""
                   className="dark:invert w-24"
                   width={100}
                   height={24}
-                  priority
                 />
               </a>
             </li>
