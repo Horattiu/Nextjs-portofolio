@@ -10,20 +10,32 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+
 
 function Projects() {
+
+
+  useEffect(() => {
+    AOS.init({
+         duration: 800,
+         once: false,
+       })
+ }, [])
   function openWebsiteInNewTab(url: string) {
     window.open(url, "_blank");
   }
 
   return (
     <>
-      <div className="text-center p-20">
-        <h1 id="projects" className="font-medium text-3xl ">
+      <div data-aos="fade-up" className="text-center p-20 ">
+        <h1 id="projects" className="font-medium text-3xl  ">
           Projects
         </h1>
       </div>
-      <div className="g grid md:grid-cols-3 sm:grid-cols-2 gap-4 justify-items-center mx-auto max-w-5xl ">
+      <div data-aos="fade-up" className="g grid md:grid-cols-3 sm:grid-cols-2 gap-4 justify-items-center mx-auto max-w-5xl ">
         <Card className="bg-gray-300 transparent dark:invert relative hover:bg-orange-200 transition duration-300 ease-in-out h-60 ">
           <img className="  absolute " src="./img/tailw.png" alt="" />
           <CardHeader className="">
@@ -69,17 +81,20 @@ function Projects() {
           <CardHeader className="">
             <CardTitle className="text-gray-800">Express blog</CardTitle>
             <CardDescription className="text-gray-800 mb-1 pb-10 ">
-              blog application developed using Node.js and MongoDB. It follows
+              <div className="">
+                <img src="/img/wip.png" alt="" className="w-20  mx-auto mt-1" />
+                <p className="mx-auto mt-4">Adding new features! Stay tuned </p>
+              </div>
+              {/* blog application developed using Node.js and MongoDB. It follows
               the Express Router and Model-View-Controller (MVC) architectural
-              pattern.
+              pattern. */}
             </CardDescription>
             <Button
               className="absolute w-60 bottom-4"
-              onClick={() =>
-                openWebsiteInNewTab("https://express-nodejs-ll9x.onrender.com/")
-              }
+              // onClick={() => openWebsiteInNewTab("")}
             >
               visit
+              {/* "https://express-nodejs-ll9x.onrender.com/" */}
             </Button>
           </CardHeader>
         </Card>

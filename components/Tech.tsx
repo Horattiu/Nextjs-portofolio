@@ -1,3 +1,5 @@
+'use client'
+
 import {
   Card,
   CardContent,
@@ -6,22 +8,36 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+
+
+
 
 function Tech() {
+
+  useEffect(() => {
+    AOS.init({
+         duration: 800,
+         once: false,
+       })
+ }, [])
+
   return (
     <>
-      <div className="">
-        <h1
+    <div >
+        <h1 data-aos="fade-up"
           className=" h-32 flex items-center justify-center text-4xl font-medium  p-20"
           id="tech"
         >
           Technologies
         </h1>
       </div>
-      <div className="w-64  mx-auto ">
+      <div  data-aos="fade-up" className="w-64  mx-auto ">
         <img src="./img/robot.png" alt="" className="pb-5 dark:invert" />
       </div>
-      <div className=" grid md:grid-cols-3 sm:grid-cols-2 gap-4 justify-items-center mx-auto max-w-5xl  ">
+      <div data-aos="fade-up" className=" grid md:grid-cols-3 sm:grid-cols-2 gap-4 justify-items-center mx-auto max-w-5xl  ">
         <Card className=" ">
           <CardHeader>
             <CardTitle>JavaScript</CardTitle>

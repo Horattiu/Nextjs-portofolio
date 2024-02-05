@@ -1,9 +1,28 @@
+
+'use client'
+
+
 import React from "react";
 import { Button } from "./ui/button";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+
+
+
+
 
 function About() {
+  useEffect(() => {
+    AOS.init({
+         duration: 800,
+         once: false,
+       })
+ }, [])
+
+
   return (
-    <div
+    <div data-aos="fade-up"
       id="about"
       className="flex justify-center items-center gap-x-44 h-full flex-col sm:flex-row md:w-screen pb-20 "
     >
@@ -23,8 +42,7 @@ function About() {
           I'm a web developer and illustrator who has a genuine passion for all
           things related to computers, especially in software. I enjoy crafting
           web solutions and continuously expanding my knowledge to grow as a
-          developer. If you have an exciting challenge in mind, please don't
-          hesitate to reach out to me!
+          developer. Have a creative challenge? I'm all ears.
         </p>
         <div className="flex gap-6 pt-6">
           <Button className="px-8 dark:invert ">resume</Button>
